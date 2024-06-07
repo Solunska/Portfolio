@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 0;
+    border-bottom: 0.2em solid #C5CED4;
+    width: 90%;
+    margin: 0 auto;
+    height: 3%;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.items li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 1.7em;
+    color: antiquewhite;
+}

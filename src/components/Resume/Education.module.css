@@ -1,0 +1,15 @@
+.education_container {
+    margin: 1.2em;
+    padding: 1.3em;
+    border-left: 0.1em solid #C5CED4;
+}
+
+.school {
+    font-size: 2em;
+    color: #C5CED4;
+}
+
+.year {
+    font-size: 1.5em;
+    color: #c5ced490;
+}

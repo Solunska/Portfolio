@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  font-size: 10px;
+  background-color: #242321;
+  height: 100%;
+}
+
+html{
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
+.about-me-container {
+  display: flex;
+  width: 90%;
+  height: 80%;
+  margin: 3em auto;
+}
