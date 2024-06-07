@@ -3,6 +3,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  height: 80%;
+}
+
 body{
   font-size: 10px;
   background-color: #242321;
@@ -20,6 +24,8 @@ html{
 .about-me-container {
   display: flex;
   width: 90%;
-  height: 80%;
+  height: 100%;
   margin: 3em auto;
+  margin-top: 6em;
+  justify-content: space-between;
 }
