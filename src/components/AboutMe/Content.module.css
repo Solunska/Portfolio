@@ -1,9 +1,23 @@
 .container {
-    width: 75%;
+    width: 90em;
     margin: 9em 10em 0 8em;
 }
 
 .btn_container {
     margin: 10em 0 5em;
     float: right;
+}
+
+@media(max-width: 941px) {
+    .container {
+        width: 100%;
+        margin: 1em;
+    }
+
+    .btn_container {
+        margin: 2em 0;
+        float: none;
+        text-align: center;
+        width: 35em;
+    }
 }

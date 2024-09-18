@@ -1,10 +1,22 @@
-import { NavLink } from "react-router-dom";
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.css';
 
 export default function Navigation() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+    const closeMenu = () => setIsMenuOpen(false);
+
     return (
         <nav className={styles.navbar}>
-            <ul className={styles.items}>
+            <button className={styles.burgerMenu} onClick={toggleMenu}>
+                ☰
+            </button>
+            <ul className={`${styles.items} ${isMenuOpen ? styles.show : ''}`}>
+                <button className={styles.closeMenu} onClick={closeMenu}>
+                    &times;
+                </button>
                 <li className={styles.item}>
                     <NavLink
                         to='/'

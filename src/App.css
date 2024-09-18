@@ -21,11 +21,33 @@ html{
   height: 100%;
 }
 
+
+
+/* Ensure full height for all elements */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  font-size: 10px;
+  background-color: #242321;
+}
+
 .about-me-container {
   display: flex;
+  flex-direction: row;
   width: 90%;
   height: 100%;
   margin: 3em auto;
-  margin-top: 6em;
   justify-content: space-between;
+}
+
+@media(max-width: 900px) {
+  .about-me-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 1em auto;
+  }
 }

@@ -2,9 +2,40 @@
     font-size: 9em;
     color: #C5CED4;
     height: 100%;
-}
-
-.container p:nth-of-type(3) {
+  }
+  
+  .container p:nth-of-type(3) {
     font-size: 9em;
     color: #F9BE42;
-}
+  }
+  
+  @media(max-width: 1550px) {
+    .container p,
+    .container p:nth-of-type(3) {
+      font-size: 7em;
+    }
+  }
+  
+  @media(max-width: 1530px) {
+    .container p,
+    .container p:nth-of-type(3) {
+      font-size: 6em;
+    }
+  }
+  
+  @media(max-width: 1005px) {
+    .container p,
+    .container p:nth-of-type(3) {
+      font-size: 5em;
+    }
+  }
+
+  @media(max-width: 900px) {
+    .container p,
+    .container p:nth-of-type(3) {
+      font-size: 4em;
+    }
+  }
+  
+
+  
