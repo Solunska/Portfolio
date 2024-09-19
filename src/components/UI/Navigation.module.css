@@ -43,8 +43,8 @@
     color: antiquewhite;
     cursor: pointer;
     position: absolute;
-    top: 0.5em;
-    right: 0.5em;
+    top: 0.3em;
+    right: 0.4em;
 }
 
 @media (max-width: 900px) {
@@ -63,6 +63,7 @@
 
     .navbar {
         justify-content: end;
+        border-bottom: none;
     }
 
     .items.show {

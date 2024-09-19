@@ -51,7 +51,7 @@
 @media (max-width: 1400px) {
     .resume_container {
         flex-direction: column;
-
+        margin-top: 1em;
     }
 
     .education_and_skills_container {

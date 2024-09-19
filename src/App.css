@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -50,6 +50,6 @@ body {
   .about-me-container {
     flex-direction: column;
     width: 90%;
-    margin: 1em auto;
+    margin: 0 auto;
   }
 }

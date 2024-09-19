@@ -5,4 +5,9 @@
     font-size: 1.5em;
     background-color: #ffffff3d;
     border-radius: 2em;
+    transition: background-color 0.3s ease; 
+}
+
+.additional_skill:hover {
+    background-color: #c0c0c03d;
 }
