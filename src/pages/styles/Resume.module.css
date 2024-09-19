@@ -23,8 +23,8 @@
 
 .resume_content {
     margin-top: 1em;
-    font-size: 2.5em;
-    color: #C5CED4;
+    font-size: 2.3em;
+    color: #c5ced4de;
     font-weight: 300;
 }
 
@@ -35,41 +35,77 @@
     margin: 5em 0 3em 2em;
 }
 
-.aditional_skills_container{
+.aditional_skills_container {
     margin: 1em 2em;
     background-color: #353534;
     padding: 3em;
     border-radius: 4em;
 }
 
-.aditional_skills{
+.aditional_skills {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1em;
 }
 
-
-
 @media (max-width: 1400px) {
     .resume_container {
         flex-direction: column;
-        
+
     }
 
     .education_and_skills_container {
-        margin:   1.4em 10em 5em 20em;
+        margin: 1.4em 10em 5em 20em;
         width: 75%;
 
     }
 
-    .resume_introduction{
+    .resume_introduction {
         width: 75%;
     }
 
-    .aditional_skills_container{
+    .aditional_skills_container {
         width: 50%;
     }
 
-  }
+    .resume_introduction {
+        margin-left: 7em;
+    }
 
+    .education_and_skills_container {
+        margin: 3em 10em 5em 6em;
+    }
+}
 
+@media(max-width: 940px) {
+    .resume_introduction {
+        margin-left: 3em;
+        width: 80vw;
+    }
+
+    .education_and_skills_container {
+        margin-left: 2em;
+    }
+
+    .resume_content {
+        font-size: 1.8em;
+    }
+
+    .skills {
+        width: 90vw;
+        margin-left: 0;
+    }
+
+    .aditional_skills_container {
+        width: 85%;
+        padding: 2em;
+    }
+
+    .aditional_skills {
+        font-size: 0.8em;
+    }
+
+    .label {
+        font-size: 1.5em;
+    }
+}

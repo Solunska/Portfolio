@@ -1,12 +1,25 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.css';
+import { useEffect } from 'react';
 
 export default function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const closeMenu = () => setIsMenuOpen(false);
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMenuOpen]);
 
     return (
         <nav className={styles.navbar}>
@@ -21,7 +34,8 @@ export default function Navigation() {
                     <NavLink
                         to='/'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
-                        end>
+                        end
+                        onClick={closeMenu}>
                         About me
                     </NavLink>
                 </li>
@@ -29,7 +43,8 @@ export default function Navigation() {
                     <NavLink
                         to='/resume'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
-                        end>
+                        end
+                        onClick={closeMenu}>
                         Resume
                     </NavLink>
                 </li>
@@ -37,7 +52,8 @@ export default function Navigation() {
                     <NavLink
                         to='/projects'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
-                        end>
+                        end
+                        onClick={closeMenu}>
                         Projects
                     </NavLink>
                 </li>
@@ -45,7 +61,8 @@ export default function Navigation() {
                     <NavLink
                         to='/contact'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
-                        end>
+                        end
+                        onClick={closeMenu}>
                         Contact
                     </NavLink>
                 </li>

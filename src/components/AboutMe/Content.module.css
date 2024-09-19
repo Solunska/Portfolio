@@ -1,5 +1,5 @@
 .container {
-    width: 90em;
+    width: 100em;
     margin: 9em 10em 0 8em;
 }
 
@@ -8,10 +8,10 @@
     float: right;
 }
 
-@media(max-width: 941px) {
+@media(max-width: 940px) {
     .container {
         width: 100%;
-        margin: 1em;
+        margin: 0;
     }
 
     .btn_container {

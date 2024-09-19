@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 4em 0;
-    border-bottom: 0.2em solid #C5CED4;
+    border-bottom: 0.2em solid #c5ced481;
     width: 90%;
     margin: 0 auto;
     height: 3%;
@@ -44,36 +44,36 @@
     cursor: pointer;
     position: absolute;
     top: 0.5em;
-    right: 1em;
+    right: 0.5em;
 }
 
-/* Media Query for screen width less than 900px */
 @media (max-width: 900px) {
     .items {
-        display: none; /* Hide items by default on small screens */
-        flex-direction: column; /* Stack items vertically */
+        display: none;
+        flex-direction: column;
         width: 100%;
-        height: 100vh; /* Full viewport height */
-        justify-content: center; /* Center items vertically */
-        position: fixed; /* Fix position to cover entire screen */
+        height: 100vh;
+        justify-content: center;
+        position: fixed;
         top: 0;
         left: 0;
-        background: #6a6666f0; /* Background color */
-        z-index: 1000; /* Ensure it is on top of other content */
+        background: #6a6666fa;
+        z-index: 1000;
     }
 
-    .navbar{
-        justify-content: start;
+    .navbar {
+        justify-content: end;
     }
+
     .items.show {
-        display: flex; /* Show items when menu is open */
+        display: flex;
     }
 
     .burgerMenu {
-        display: block; /* Show burger menu on small screens */
+        display: block;
     }
 
     .closeMenu {
-        display: block; /* Show close button on small screens */
+        display: block;
     }
 }
