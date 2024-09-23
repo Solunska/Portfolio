@@ -47,7 +47,7 @@
     color: #a98029;
 }
 
-@media(max-width: 940px) {
+@media(max-width: 900px) {
     .button{
         border: none;
         font-size: 2em;

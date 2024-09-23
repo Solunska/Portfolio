@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import AboutMe from './pages/AboutMe.jsx';
 import Resume from './pages/Resume.jsx';
+import Projects from './pages/Projects.jsx';
 import RootLayout from './pages/Root.jsx';
 import './App.css';
 
@@ -21,7 +22,7 @@ function App() {
                 },
                 {
                     path: 'projects',
-                    element: <AboutMe />
+                    element: <Projects />
                 },
                 {
                     path: 'contact',

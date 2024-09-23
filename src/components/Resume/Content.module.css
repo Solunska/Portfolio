@@ -1,7 +1,7 @@
 .resume_container {
     display: flex;
-    height: 90%;
-    margin: 7em auto;
+    height: 100%;
+    margin: 4em auto;
     justify-content: space-between;
 }
 
@@ -11,8 +11,11 @@
 }
 
 .education_and_skills_container {
-    width: 30%;
+    width: 35%;
     margin-right: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .label {
@@ -32,7 +35,7 @@
     display: flex;
     align-items: start;
     flex-wrap: wrap;
-    margin: 5em 0 3em 2em;
+    margin-left: 2em;
 }
 
 .aditional_skills_container {
