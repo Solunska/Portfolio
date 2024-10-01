@@ -50,6 +50,7 @@
     .container {
         margin: 3em auto;
         width: 90%;
+        margin-top: 0;
     }
 
     .profile_photo {
