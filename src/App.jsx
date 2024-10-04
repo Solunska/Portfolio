@@ -27,8 +27,7 @@ function App() {
                 {
                     path: 'contact',
                     element: <AboutMe />
-                },
-
+                }
             ]
         }
     ])

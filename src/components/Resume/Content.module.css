@@ -8,6 +8,26 @@
 .resume_introduction {
     width: 50%;
     margin-left: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.resume_introduction p:nth-of-type(2) {
+    margin: 0;
+}
+
+.infoContainer {
+    background-color: #353534;
+    padding: 3em;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
 }
 
 .education_and_skills_container {
@@ -26,17 +46,18 @@
 }
 
 .resume_content {
-    margin-top: 1em;
-    font-size: 2.3em;
+    font-size: 2em;
     color: #c5ced4de;
     font-weight: 300;
 }
 
 .skills {
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    margin-left: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    /* Horizontal alignment */
+    align-items: center;
 }
 
 .aditional_skills_container {
@@ -86,8 +107,27 @@
     }
 }
 
+@media (max-width: 940px) {
+    .resume_introduction div {
+        width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
     .resume_container {
         margin-top: 1em;
     }
+
+    .infoContainer {
+        font-size: 0.5rem;
+        height: 80%;
+        width: 85% !important;
+    }
+
+
+    .introduction {
+        width: 85% !important;
+        font-size: 0.5rem;
+    }
+
 }

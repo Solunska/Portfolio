@@ -39,15 +39,7 @@ export default function Navigation() {
                         About me
                     </NavLink>
                 </li>
-                <li className={styles.item}>
-                    <NavLink
-                        to='/resume'
-                        className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
-                        end
-                        onClick={closeMenu}>
-                        Resume
-                    </NavLink>
-                </li>
+
                 <li className={styles.item}>
                     <NavLink
                         to='/projects'
@@ -55,6 +47,15 @@ export default function Navigation() {
                         end
                         onClick={closeMenu}>
                         Projects
+                    </NavLink>
+                </li>
+                <li className={styles.item}>
+                    <NavLink
+                        to='/resume'
+                        className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
+                        end
+                        onClick={closeMenu}>
+                        Resume
                     </NavLink>
                 </li>
                 <li className={styles.item}>

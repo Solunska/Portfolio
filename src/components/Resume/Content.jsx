@@ -1,7 +1,7 @@
 import Introduction from "../AboutMe/Introduction";
 import AdditionalSkills from "./AdditionalSkills";
 import Education from "./Education";
-import Skill from "./Skill";
+import Skill from "../UI/Skill";
 import styles from './Content.module.css';
 import cssImg from '../../assets/css.png'
 import figmaImg from '../../assets/figma.png';
@@ -17,9 +17,11 @@ const content = ['Hardworking, ambitious, and creative college student with a ke
 export default function Content() {
     return <div className={styles.resume_container}>
         <div className={styles.resume_introduction}>
-            <Introduction hiddenParagraph={true} />
-            <div className={styles.resume_content}>{content[0]}</div>
-            <div className={styles.resume_content}>{content[1]}</div>
+            <Introduction className={styles.introduction} hiddenParagraph={true} />
+            <div className={styles.infoContainer}>
+                <div className={styles.resume_content}>{content[0]}</div>
+                <div className={styles.resume_content}>{content[1]}</div>
+            </div>
         </div>
         <div className={styles.education_and_skills_container}>
             <p className={styles.label}>Education</p>

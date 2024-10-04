@@ -19,3 +19,13 @@
         margin-left: 0;
     }    
 }
+
+@media (max-width: 900px) {
+    .school {
+        font-size: 1.75em;
+    }   
+
+    .year {
+        font-size: 1em;
+    }
+}

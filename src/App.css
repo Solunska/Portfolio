@@ -46,7 +46,7 @@ body {
   justify-content: space-between;
 }
 
-@media(max-width: 941px) {
+@media(max-width: 940px) {
   .about-me-container {
     flex-direction: column;
     width: 90%;

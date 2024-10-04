@@ -20,6 +20,12 @@
     font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
+    z-index: 10000;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
 
 .categoryButton {
@@ -38,11 +44,11 @@
 }
 
 .projectCardContainer:last-child {
-   margin-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 .projectCardContainer img {
-    width: 50rem;
+    width: 40%;
     border-radius: 2em;
     aspect-ratio: 16 / 9;
 }
@@ -59,8 +65,17 @@
     font-size: 1.7rem;
     color: #c5ced4c9;
 }
-.descriptionContainer p:nth-of-type(2) {
-    font-size: 1.3rem;
+
+.descriptionContainer p:nth-of-type(2){
+    font-size: 1rem;
+}
+
+.descriptionContainer p:nth-of-type(2) div{
+    margin-bottom: 1em;
+}
+
+.descriptionContainer p:nth-of-type(2) div:last-of-type{
+    color: #F9BE42;
 }
 
 .descriptionContainer p:first-child {
@@ -124,10 +139,28 @@
 
     .mainContainer {
         margin: 1.6rem auto;
+        margin-top: 0;
     }
 
     .categoryButton,
     .categoryButtonActive {
         font-size: 1.32em;
+    }
+}
+
+@media (max-width: 660px) {
+    .categoryButton,
+    .categoryButtonActive,
+    .buttonOutlined {
+        padding: 0.75em 2em;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .categoryButton,
+    .categoryButtonActive,
+    .buttonOutlined {
+        font-size: 0.75rem;
     }
 }

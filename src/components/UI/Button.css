@@ -27,14 +27,13 @@
     color: #a98029;
 }
 
-
 .button_active_big {
-    font-size: 2.5em;
-    padding: 1.5rem 4.5rem;
-    border: 0.1em solid #F9BE42;
+    font-size: 2em;
+    padding: 1.5rem 4rem;
+    border: 0.1em solid #a98029;
     border-radius: 50px;
+    color: #a98029;
     background-color: transparent;
-    color: #F9BE42;
     font-weight: 400;
     width: 100%;
     cursor: pointer;
@@ -42,13 +41,24 @@
 }
 
 .button_active_big:hover{
-    border-color: #a98029;
-    color: #a98029;
+    border-color: #F9BE42;
+    color: #F9BE42;
+}
+
+@media(max-width: 1330px) {
+    .button_active_big{
+        font-size: 1.75em;
+        padding: 1rem 4rem;
+    }
 }
 
 @media(max-width: 900px) {
     .button{
         border: none;
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+
+    .button_active_big{
+        padding: 1rem 2rem;
     }
 }
