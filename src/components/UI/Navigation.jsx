@@ -58,7 +58,7 @@ export default function Navigation() {
                         Resume
                     </NavLink>
                 </li>
-                <li className={styles.item}>
+                {/* <li className={styles.item}>
                     <NavLink
                         to='/contact'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
@@ -66,7 +66,7 @@ export default function Navigation() {
                         onClick={closeMenu}>
                         Contact
                     </NavLink>
-                </li>
+                </li> */}
             </ul>
         </nav>
     );

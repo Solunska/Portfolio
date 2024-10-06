@@ -22,12 +22,12 @@ export default function ProjectCard({
             <img src={photo} alt={projectName} />
             <div className={styles.descriptionContainer}>
                 <p>{projectName}</p>
-                <p>{descriptionWithBreaks}</p>
+                <div>{descriptionWithBreaks}</div>
                 <div className={styles.links}>
-                    <a href={linkCode} className={styles.buttonOutlined}>
+                    <a href={linkCode} target="_blank" rel="noopener noreferrer" className={styles.buttonOutlined}>
                         {label1}
                     </a>
-                    <a href={linkDemo} className={hidden ? styles.hidden : styles.buttonOutlined}>
+                    <a href={linkDemo} target="_blank" rel="noopener noreferrer" className={hidden ? styles.hidden : styles.buttonOutlined}>
                         {label2}
                     </a>
                 </div>

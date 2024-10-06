@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    gap: 2em;
+    background-color: #353534;
+    padding: 3em;
+    border-radius: 1rem;
+    max-width: 20%;
+    justify-content: center;
+}
+
+.image{
+    width: 6em;
+    aspect-ratio: 1/1;
+    border-radius: 1em;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.image:hover{
+   transform: scale(1.1);
+}
+
+@media (max-width:1200px) {
+    .container{
+        max-width: 40%;
+    }
+}
+
+@media(max-width: 600px) {
+    .image{
+        width: 5em;
+        border-radius: 0.75em;
+    }
+
+}

@@ -10,9 +10,14 @@ import htmlImg from '../../assets/html.png';
 import javaScriptImg from '../../assets/javaScript.png';
 import bootstrapImg from '../../assets/bootstrap.png';
 import reactImg from '../../assets/react.png';
+import typescript from '../../assets/typescript.png';
+import redux from '../../assets/redux.png';
+import nextjs from '../../assets/nextjs.png';
 
-const content = ['Hardworking, ambitious, and creative college student with a keen interest in UX/UI design and development. Equipped with a solid understanding of web technologies, including HTML, CSS, JavaScript, and Figma, I specialize in crafting visually pleasing web applications. As a quick learner, I am ready to take on any challenge and eager to increase my knowledge while gaining practical experience. Seeking an opportunity to apply my skills and committed to becoming a dependable and valuable team member, I aim to contribute effectively to projects, deliver innovative solutions, and further develop my expertise in UX/UI design and development.', 'I’m actively seeking internship opportunities where I can apply my technical skills, creative problem-solving, and collaborative spirit to contribute to real-world projects. I thrive in environments where I can learn from experienced professionals, tackle challenges, and grow as a developer and designer.'];
-
+const content = [
+    <>Hardworking, ambitious and creative student at <span className="highlight">Faculty of Computer Science & Engineering</span> with keen interest in <span className="highlight">Web Development</span>, equipped with a solid understanding of web technologies like <span className="tech-stack">HTML, CSS, JavaScript, React, NextJs, and TypeScript</span>. As a quick learner, I am ready to take on any challenge and eager to increase my knowledge while gaining practical experience. Seeking an opportunity to apply my skills and committed to becoming a reliable and valuable team member, contributing effectively to projects while upgrading my knowledge.</>,
+    <>I’m actively seeking <span className="highlight">internship opportunities</span> where I can apply my <span className="tech-stack">technical skills, creative problem-solving</span>, and collaborative spirit to contribute to real-world projects. I thrive in environments where I can learn from experienced professionals, tackle challenges, and grow as a developer and designer.</>,
+];
 
 export default function Content() {
     return <div className={styles.resume_container}>
@@ -35,13 +40,13 @@ export default function Content() {
                 <Skill image={htmlImg} alt='html' />
                 <Skill image={cssImg} alt='css' />
                 <Skill image={javaScriptImg} alt='java script' />
+                <Skill image={typescript} alt='typescript' />
+                <Skill image={reactImg} alt='reactImg' />
+                <Skill image={redux} alt='redux' />
+                <Skill image={nextjs} alt='nextjs' />
+                <Skill image={githubImg} alt='github' />
                 <Skill image={bootstrapImg} alt='bootstrap' />
                 <Skill image={figmaImg} alt='figma' />
-                <Skill image={reactImg} alt='react' />
-                <Skill image={githubImg} alt='github' />
-                <Skill image={githubImg} alt='github' />
-                <Skill image={githubImg} alt='github' />
-                <Skill image={githubImg} alt='github' />
             </div>
             <div className={styles.aditional_skills_container}>
                 <p className={styles.label}>Additional Skills</p>

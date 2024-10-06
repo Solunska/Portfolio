@@ -1,13 +1,25 @@
 .container {
     width: 70%;
-    margin: 2em 10em;
+    margin: 2em 4em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.introductionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .btn_container {
     width: 60%;
+}
+
+.label{
+    color: #C5CED4;
+    font-size: 3em;
+    font-weight: 600;
 }
 
 @media(max-width: 1600px) {

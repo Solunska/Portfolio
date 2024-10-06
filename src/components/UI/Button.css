@@ -9,17 +9,17 @@
     width: 10em;
     height: 2.5em;
     text-decoration: none;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
-.button:hover{
+.button:hover {
     color: #c5ced4c2;
 }
 
 .active {
     border-color: #F9BE42;
     color: #F9BE42;
-    transition: color 0.3s ease, border-color 0.3s ease; 
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .active:hover {
@@ -38,27 +38,34 @@
     width: 100%;
     cursor: pointer;
     transition: color 0.3s ease, border-color 0.3s ease;
+
 }
 
-.button_active_big:hover{
+
+.button_active_big a {
+    text-decoration: none;
+    color: #a98029;
+}
+
+.button_active_big:hover {
     border-color: #F9BE42;
     color: #F9BE42;
 }
 
 @media(max-width: 1330px) {
-    .button_active_big{
+    .button_active_big {
         font-size: 1.75em;
         padding: 1rem 4rem;
     }
 }
 
 @media(max-width: 900px) {
-    .button{
+    .button {
         border: none;
         font-size: 1.5em;
     }
 
-    .button_active_big{
+    .button_active_big {
         padding: 1rem 2rem;
     }
 }

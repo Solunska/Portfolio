@@ -5,7 +5,7 @@
 }
 
 .container p {
-  font-size: 6em;
+  font-size: 5em;
   color: #C5CED4;
   line-height: 1;
   font-weight: 500;
@@ -32,12 +32,10 @@ span {
 }
 
 @media(max-width: 1330px) {
-
   .container p:nth-of-type(1),
   .container p:nth-of-type(2) {
-    font-size: 4em;
+    font-size: 3em;
   }
-
 }
 
 @media(max-width: 940px) {

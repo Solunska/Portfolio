@@ -61,20 +61,21 @@
     gap: 2em;
 }
 
-.descriptionContainer p {
+.descriptionContainer p,
+.descriptionContainer div:first-of-type {
     font-size: 1.7rem;
     color: #c5ced4c9;
 }
 
-.descriptionContainer p:nth-of-type(2){
+.descriptionContainer div:first-of-type{
     font-size: 1rem;
 }
 
-.descriptionContainer p:nth-of-type(2) div{
+.descriptionContainer div:first-of-type div{
     margin-bottom: 1em;
 }
 
-.descriptionContainer p:nth-of-type(2) div:last-of-type{
+.descriptionContainer div:first-of-type div:last-of-type{
     color: #F9BE42;
 }
 

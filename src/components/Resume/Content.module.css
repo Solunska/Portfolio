@@ -48,15 +48,19 @@
 .resume_content {
     font-size: 2em;
     color: #c5ced4de;
+    font-weight: 400;
+}
+
+.resume_content:nth-of-type(2) {
+    font-style: italic;
     font-weight: 300;
 }
 
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 20px;
+    gap: 10px;
     justify-items: center;
-    /* Horizontal alignment */
     align-items: center;
 }
 
@@ -129,5 +133,14 @@
         width: 85% !important;
         font-size: 0.5rem;
     }
+}
 
+@media (max-width: 600px) {
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+
+    .skills img {
+        width: 6em;
+    }
 }
