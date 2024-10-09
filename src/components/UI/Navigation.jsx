@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.css';
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,16 +22,37 @@ export default function Navigation() {
         };
     }, [isMenuOpen]);
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.3,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+
     return (
         <nav className={styles.navbar}>
             <button className={styles.burgerMenu} onClick={toggleMenu}>
                 ☰
             </button>
-            <ul className={`${styles.items} ${isMenuOpen ? styles.show : ''}`}>
+            <motion.ul
+                className={`${styles.items} ${isMenuOpen ? styles.show : ''}`}
+                variants={containerVariants}
+                initial="hidden"
+                animate="show">
                 <button className={styles.closeMenu} onClick={closeMenu}>
                     &times;
                 </button>
-                <li className={styles.item}>
+                <motion.li
+                    className={styles.item}
+                    variants={itemVariants}>
                     <NavLink
                         to='/'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
@@ -38,9 +60,11 @@ export default function Navigation() {
                         onClick={closeMenu}>
                         About me
                     </NavLink>
-                </li>
+                </motion.li>
 
-                <li className={styles.item}>
+                <motion.li
+                    className={styles.item}
+                    variants={itemVariants}>
                     <NavLink
                         to='/projects'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
@@ -48,8 +72,10 @@ export default function Navigation() {
                         onClick={closeMenu}>
                         Projects
                     </NavLink>
-                </li>
-                <li className={styles.item}>
+                </motion.li>
+                <motion.li
+                    className={styles.item}
+                    variants={itemVariants}>
                     <NavLink
                         to='/resume'
                         className={({ isActive }) => isActive ? `${'button'} ${'active'}` : 'button'}
@@ -57,7 +83,7 @@ export default function Navigation() {
                         onClick={closeMenu}>
                         Resume
                     </NavLink>
-                </li>
+                </motion.li>
                 {/* <li className={styles.item}>
                     <NavLink
                         to='/contact'
@@ -67,7 +93,7 @@ export default function Navigation() {
                         Contact
                     </NavLink>
                 </li> */}
-            </ul>
+            </motion.ul>
         </nav>
     );
 }

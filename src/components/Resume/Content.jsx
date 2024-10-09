@@ -13,6 +13,7 @@ import reactImg from '../../assets/react.png';
 import typescript from '../../assets/typescript.png';
 import redux from '../../assets/redux.png';
 import nextjs from '../../assets/nextjs.png';
+import { motion } from "framer-motion";
 
 const content = [
     <>Hardworking, ambitious and creative student at <span className="highlight">Faculty of Computer Science & Engineering</span> with keen interest in <span className="highlight">Web Development</span>, equipped with a solid understanding of web technologies like <span className="tech-stack">HTML, CSS, JavaScript, React, NextJs, and TypeScript</span>. As a quick learner, I am ready to take on any challenge and eager to increase my knowledge while gaining practical experience. Seeking an opportunity to apply my skills and committed to becoming a reliable and valuable team member, contributing effectively to projects while upgrading my knowledge.</>,
@@ -20,43 +21,83 @@ const content = [
 ];
 
 export default function Content() {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: -20 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+    };
+
+
     return <div className={styles.resume_container}>
         <div className={styles.resume_introduction}>
-            <Introduction className={styles.introduction} hiddenParagraph={true} />
-            <div className={styles.infoContainer}>
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ type: 'spring', stiffness: 50 }}>
+                <Introduction className={styles.introduction} hiddenParagraph={true} />
+            </motion.div>
+
+            <motion.div
+                className={styles.infoContainer}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ type: 'spring', stiffness: 50 }}>
                 <div className={styles.resume_content}>{content[0]}</div>
                 <div className={styles.resume_content}>{content[1]}</div>
-            </div>
+            </motion.div>
         </div>
         <div className={styles.education_and_skills_container}>
             <p className={styles.label}>Education</p>
-            <div>
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ type: 'spring', stiffness: 50 }}>
                 <Education school='Faculty of Computer Science and Engineering, Skopje'
                     year='2020 - Present' />
                 <Education school='Gymnasium Kocho Racin, Veles'
                     year='2016 - 2020' />
-            </div>
-            <div className={styles.skills}>
-                <Skill image={htmlImg} alt='html' />
-                <Skill image={cssImg} alt='css' />
-                <Skill image={javaScriptImg} alt='java script' />
-                <Skill image={typescript} alt='typescript' />
-                <Skill image={reactImg} alt='reactImg' />
-                <Skill image={redux} alt='redux' />
-                <Skill image={nextjs} alt='nextjs' />
-                <Skill image={githubImg} alt='github' />
-                <Skill image={bootstrapImg} alt='bootstrap' />
-                <Skill image={figmaImg} alt='figma' />
-            </div>
+            </motion.div>
+            <motion.div
+                className={styles.skills}
+                variants={containerVariants}
+                initial="hidden"
+                animate="show">
+                <motion.div variants={itemVariants}><Skill image={htmlImg} alt='html' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={cssImg} alt='css' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={javaScriptImg} alt='java script' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={typescript} alt='typescript' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={reactImg} alt='reactImg' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={redux} alt='redux' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={nextjs} alt='nextjs' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={githubImg} alt='github' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={bootstrapImg} alt='bootstrap' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={figmaImg} alt='figma' /></motion.div>
+            </motion.div>
             <div className={styles.aditional_skills_container}>
                 <p className={styles.label}>Additional Skills</p>
-                <div className={styles.aditional_skills}>
-                    <AdditionalSkills skill='Teamwork Skills' />
-                    <AdditionalSkills skill='Colaboration' />
-                    <AdditionalSkills skill='Creativity' />
-                    <AdditionalSkills skill='Organized' />
-                    <AdditionalSkills skill='Hardworking' />
-                </div>
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="show"
+                    className={styles.aditional_skills}>
+                    <motion.div variants={itemVariants}><AdditionalSkills skill='Teamwork Skills' /></motion.div>
+                    <motion.div variants={itemVariants}><AdditionalSkills skill='Colaboration' /></motion.div>
+                    <motion.div variants={itemVariants}> <AdditionalSkills skill='Creativity' /></motion.div>
+                    <motion.div variants={itemVariants}> <AdditionalSkills skill='Organized' /></motion.div>
+                    <motion.div variants={itemVariants}> <AdditionalSkills skill='Hardworking' /></motion.div>
+                </motion.div>
             </div>
         </div>
     </div>

@@ -14,10 +14,8 @@ export default function Content() {
             {/* <Button buttonClass={activeTab === 'uxui' ? styles.categoryButtonActive : styles.categoryButton} handleClick={() => setActiveTab('uxui')}>UX/UI</Button> */}
             <Button buttonClass={activeTab === 'school' ? styles.categoryButtonActive : styles.categoryButton} handleClick={() => setActiveTab('school')}>School Projects</Button>
         </div>
-        <div className={styles.projectsContainer}>
-            {activeTab === 'react' ? <ReactProjects /> : null}
-            {activeTab === 'uxui' ? <UxUiProjects /> : null}
-            {activeTab === 'school' ? <SchoolProjects /> : null}
-        </div>
+        {activeTab === 'react' ? <ReactProjects /> : null}
+        {activeTab === 'uxui' ? <UxUiProjects /> : null}
+        {activeTab === 'school' ? <SchoolProjects /> : null}
     </div>
 }
