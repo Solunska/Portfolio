@@ -97,13 +97,17 @@
     color: #F9BE42;
     border: 1px solid #f9bf4294;
     border-radius: 2em;
+    transition: box-shadow 0.3s ease;
 
 }
 
-.buttonOutlined:hover {
-
+/* .buttonOutlined:hover {
     background-color: #f9bf4224;
     color: white;
+} */
+
+.buttonOutlined:hover {
+    box-shadow: 0 0 15px #F9BE42;
 }
 
 @media(max-width:1200px) {

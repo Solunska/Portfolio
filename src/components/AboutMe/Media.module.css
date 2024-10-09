@@ -1,33 +1,34 @@
-.container{
+.container {
     display: flex;
     gap: 2em;
-    background-color: #353534;
-    padding: 3em;
+    padding: 1em 0;
     border-radius: 1rem;
     max-width: 20%;
-    justify-content: center;
+    justify-content: start;
 }
 
-.image{
+.image {
     width: 6em;
     aspect-ratio: 1/1;
     border-radius: 1em;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    position: relative;
 }
 
-.image:hover{
-   transform: scale(1.1);
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #F9BE42;
 }
 
 @media (max-width:1200px) {
-    .container{
+    .container {
         max-width: 40%;
     }
 }
 
 @media(max-width: 600px) {
-    .image{
+    .image {
         width: 5em;
         border-radius: 0.75em;
     }
