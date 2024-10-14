@@ -19,7 +19,9 @@ export default function ProjectCard({
 
     return (
         <div className={styles.projectCardContainer}>
-            <img src={photo} alt={projectName} />
+            <div className={styles.imgContainer}>
+                 <img src={photo} alt={projectName} />
+            </div>
             <div className={styles.descriptionContainer}>
                 <p>{projectName}</p>
                 <div>{descriptionWithBreaks}</div>

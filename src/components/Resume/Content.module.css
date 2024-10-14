@@ -1,7 +1,7 @@
 .resume_container {
     display: flex;
     height: 100%;
-    margin: 4em auto;
+    margin: 2em auto;
     justify-content: space-between;
 }
 
@@ -40,13 +40,13 @@
 }
 
 .label {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #C5CED4;
     margin-left: 0.5em;
 }
 
 .resume_content {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #c5ced4de;
     font-weight: 400;
 }
@@ -64,10 +64,14 @@
     align-items: center;
 }
 
+.skills img{
+    width: 6em;
+}
+
 .aditional_skills_container {
     margin: 1em 2em;
     background-color: #353534;
-    padding: 3em;
+    padding: 2em;
     border-radius: 4em;
 }
 
@@ -124,7 +128,7 @@
 
     .infoContainer {
         font-size: 0.5rem;
-        height: 80%;
+        height: auto;
         width: 85% !important;
     }
 

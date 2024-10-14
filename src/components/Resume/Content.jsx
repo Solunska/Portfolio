@@ -58,17 +58,19 @@ export default function Content() {
             </motion.div>
         </div>
         <div className={styles.education_and_skills_container}>
-            <p className={styles.label}>Education</p>
-            <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ type: 'spring', stiffness: 50 }}>
-                <Education school='Faculty of Computer Science and Engineering, Skopje'
-                    year='2020 - Present' />
-                <Education school='Gymnasium Kocho Racin, Veles'
-                    year='2016 - 2020' />
-            </motion.div>
+            <div>
+                <p className={styles.label}>Education</p>
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -50 }}
+                    transition={{ type: 'spring', stiffness: 50 }}>
+                    <Education school='Faculty of Computer Science and Engineering, Skopje'
+                        year='2020 - Present' />
+                    <Education school='Gymnasium Kocho Racin, Veles'
+                        year='2016 - 2020' />
+                </motion.div>
+            </div>
             <motion.div
                 className={styles.skills}
                 variants={containerVariants}
