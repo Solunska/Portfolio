@@ -49,13 +49,13 @@ export default function Content() {
 
     return <div className={styles.resume_container}>
         <div className={styles.resume_introduction}>
-            <motion.div
+            {/* <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ type: 'spring', stiffness: 50 }}>
                 <Introduction className={styles.introduction} hiddenParagraph={true} />
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
                 className={styles.infoContainer}

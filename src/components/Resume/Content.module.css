@@ -6,7 +6,7 @@
 }
 
 .resume_introduction {
-    width: 50%;
+    width:40%;
     margin-left: 10em;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 }
 
 .infoContainer {
-    background-color: #353534;
+    /* background-color: #353534; */
     padding: 3em;
     border-radius: 1rem;
     display: flex;
@@ -30,7 +30,7 @@
 }
 
 .education_and_skills_container {
-    width: 35%;
+    width: 45%;
     margin-right: 10em;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
 }
 
 .resume_content {
-    font-size: 1.75em;
+    font-size: 2em;
     color: #c5ced4de;
     font-weight: 400;
 }
