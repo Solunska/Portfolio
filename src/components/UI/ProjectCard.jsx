@@ -6,9 +6,14 @@ export default function ProjectCard({
     description = '',
     linkCode,
     linkDemo,
+    wireframe,
+    userflows,
+    prototype,
     hidden,
+    hiddenLink,
     label1 = 'code',
-    label2 = 'demo'
+    label2 = 'demo',
+    label3
 }) {
     const descriptionWithBreaks = description.split('\n').map((line, index) => (
         <div key={index}>
@@ -20,17 +25,20 @@ export default function ProjectCard({
     return (
         <div className={styles.projectCardContainer}>
             <div className={styles.imgContainer}>
-                 <img src={photo} alt={projectName} />
+                <img src={photo} alt={projectName} />
             </div>
             <div className={styles.descriptionContainer}>
                 <p>{projectName}</p>
                 <div>{descriptionWithBreaks}</div>
                 <div className={styles.links}>
-                    <a href={linkCode} target="_blank" rel="noopener noreferrer" className={styles.buttonOutlined}>
+                    <a href={linkCode || userflows} target="_blank" rel="noopener noreferrer" className={styles.buttonOutlined}>
                         {label1}
                     </a>
-                    <a href={linkDemo} target="_blank" rel="noopener noreferrer" className={hidden ? styles.hidden : styles.buttonOutlined}>
+                    <a href={linkDemo || wireframe} target="_blank" rel="noopener noreferrer" className={hidden ? styles.hidden : styles.buttonOutlined}>
                         {label2}
+                    </a>
+                    <a href={linkDemo || prototype} target="_blank" rel="noopener noreferrer" className={hiddenLink ? styles.hidden : styles.buttonOutlined}>
+                        {label3}
                     </a>
                 </div>
             </div>

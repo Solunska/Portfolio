@@ -10,8 +10,8 @@
     margin-left: 10em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1em;
+    justify-content: center;
+    gap: 2em;
 }
 
 .resume_introduction p:nth-of-type(2) {
@@ -25,7 +25,6 @@
     display: flex;
     flex-direction: column;
     gap: 4em;
-    height: 70%;
     align-items: center;
     justify-content: center;
 }
@@ -35,8 +34,8 @@
     margin-right: 10em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1em;
+    justify-content: center;
+    gap: 2em;
 }
 
 .label {
@@ -46,7 +45,7 @@
 }
 
 .resume_content {
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: #c5ced4de;
     font-weight: 400;
 }

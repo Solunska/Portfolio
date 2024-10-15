@@ -13,6 +13,16 @@ import reactImg from '../../assets/react.png';
 import typescript from '../../assets/typescript.png';
 import redux from '../../assets/redux.png';
 import nextjs from '../../assets/nextjs.png';
+import dart from '../../assets/dart.png';
+import flutter from '../../assets/flutter.png';
+import netcore from '../../assets/netcore.png';
+import postgresql from '../../assets/postgresql.png';
+import django from '../../assets/django.png';
+import docker from '../../assets/docker.png';
+import kubernetes from '../../assets/kubernetes.png';
+import jenkins from '../../assets/jenkins.png';
+import java from '../../assets/java.png';
+import springboot from '../../assets/spring-boot.png';
 import { motion } from "framer-motion";
 
 const content = [
@@ -86,6 +96,16 @@ export default function Content() {
                 <motion.div variants={itemVariants}><Skill image={githubImg} alt='github' /></motion.div>
                 <motion.div variants={itemVariants}><Skill image={bootstrapImg} alt='bootstrap' /></motion.div>
                 <motion.div variants={itemVariants}><Skill image={figmaImg} alt='figma' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={dart} alt='dart' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={flutter} alt='flutter' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={netcore} alt='netcore' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={postgresql} alt='postgresql' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={django} alt='django' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={docker} alt='docker' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={kubernetes} alt='kubernetes' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={jenkins} alt='jenkins' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={java} alt='java' /></motion.div>
+                <motion.div variants={itemVariants}><Skill image={springboot} alt='springboot' /></motion.div>
             </motion.div>
             <div className={styles.aditional_skills_container}>
                 <p className={styles.label}>Additional Skills</p>
