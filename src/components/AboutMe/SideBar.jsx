@@ -14,7 +14,7 @@ export default function Sidebar() {
                 <div className={styles.profile_photo}></div>
             </div>
             <div className={styles.info_container}>
-                <Info text='👨‍🎓 Computer Science student' classes={styles.info_text} />
+                <Info text='👩🏻‍🎓 Computer Science student' classes={styles.info_text} />
                 <Info text='💻 Passionate about web development' classes={styles.info_text} />
                 <Info text='📚 Lifelong learner' classes={styles.info_text} />
             </div>
