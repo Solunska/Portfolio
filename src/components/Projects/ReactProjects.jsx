@@ -27,10 +27,11 @@ export default function ReactProjects() {
         className={styles.projectsContainer}>
         <motion.div variants={itemVariants}>
             <ProjectCard
-                description={`Nabi E-Shop is a modern and responsive e-commerce platform built with React that offers a seamless shopping experience for users. The application features a user-friendly interface, allowing customers to browse and purchase a variety of products effortlessly. Key functionalities include product listings with detailed descriptions, a shopping cart for easy order management, and secure user authentication.\nSolo project`}
-                linkCode="https://github.com/Solunska/e-shop-in-react"
-                linkDemo="https://nabistore-fcbe3.web.app/"
-                hiddenLink={true}
+                description={`Nabi E-Shop is a modern and responsive e-commerce platform built with React that offers a seamless shopping experience for users. The application features a user-friendly interface, allowing customers to browse and purchase a variety comfy sneakers effortlessly. Key functionalities include product listings with detailed descriptions, a shopping cart for easy order management, and secure user authentication.\nSolo project`}
+                link1="https://github.com/Solunska/e-shop-in-react"
+                link2="https://nabistore-fcbe3.web.app/"
+                hidden3={true}
+                hidden4={true}
                 photo={cover}
                 projectName="Nabi E-Shop"
             />
@@ -39,9 +40,10 @@ export default function ReactProjects() {
         <motion.div variants={itemVariants}>
             <ProjectCard
                 description={`I completed a comprehensive React development course on Udemy, where I gained hands-on experience through a series of diverse projects. The curriculum covered essential React concepts such as components, props, state management, and advanced techniques including Redux, React Router, and custom hooks. Each project emphasized practical implementations, enabling me to build interactive and scalable web applications.\nCourse Learnings`}
-                linkCode="https://github.com/Solunska/udemy-course-react-projects"
-                hidden={true}
-                hiddenLink={true}
+                link1="https://github.com/Solunska/udemy-course-react-projects"
+                hidden2={true}
+                hidden3={true}
+                hidden4={true}
                 photo={course}
                 projectName="React - The Complete Guide (Udemy Course)"
             />

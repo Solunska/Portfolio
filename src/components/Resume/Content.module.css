@@ -64,7 +64,7 @@
 }
 
 .skills img{
-    width: 6em;
+    width: 7em;
 }
 
 .aditional_skills_container {
@@ -112,11 +112,16 @@
     .skills {
         margin-left: 0;
     }
+
+    
+    .infoContainer {
+       padding: 3em 0;
+    }
 }
 
 @media (max-width: 940px) {
     .resume_introduction div {
-        width: 100%;
+        width: 100% !important;
     }
 }
 

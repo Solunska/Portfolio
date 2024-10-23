@@ -1,4 +1,3 @@
-import Introduction from "../AboutMe/Introduction";
 import AdditionalSkills from "./AdditionalSkills";
 import Education from "./Education";
 import Skill from "../UI/Skill";
@@ -26,8 +25,8 @@ import springboot from '../../assets/spring-boot.png';
 import { motion } from "framer-motion";
 
 const content = [
-    <>Hardworking, ambitious and creative student at <span className="highlight">Faculty of Computer Science & Engineering</span> with keen interest in <span className="highlight">Web Development</span>, equipped with a solid understanding of web technologies like <span className="tech-stack">HTML, CSS, JavaScript, React, NextJs, and TypeScript</span>. As a quick learner, I am ready to take on any challenge and eager to increase my knowledge while gaining practical experience. Seeking an opportunity to apply my skills and committed to becoming a reliable and valuable team member, contributing effectively to projects while upgrading my knowledge.</>,
-    <>I’m actively seeking <span className="highlight">internship opportunities</span> where I can apply my <span className="tech-stack">technical skills, creative problem-solving</span>, and collaborative spirit to contribute to real-world projects. I thrive in environments where I can learn from experienced professionals, tackle challenges, and grow as a developer and designer.</>,
+    <>Hardworking, ambitious and creative student at <span className="highlight">Faculty of Computer Science & Engineering</span> with keen interest in <span className="highlight">Web Development</span> and <span className="highlight">UX/UI design</span>, equipped with a solid understanding of web technologies like <span className="tech-stack">HTML, CSS, JavaScript, Java, Spring Boot, .Net, React, NextJs, TypeScript</span>  and <span className="highlight">design principals</span> and tools like <span className="highlight">Figma</span>. As a quick learner, I am ready to take on any challenge and eager to increase my knowledge while gaining practical experience. Seeking an opportunity to apply my skills and committed to becoming a reliable and valuable team member, contributing effectively to projects while upgrading my knowledge.</>,
+    <>I’m actively seeking <span className="highlight">internship opportunities</span> and <span className="highlight">entry level job positions</span> where I can apply my <span className="tech-stack">technical skills, creative problem-solving</span>, and collaborative spirit to contribute to real-world projects. I thrive in environments where I can learn from experienced professionals, tackle challenges, and grow as a developer and designer.</>,
 ];
 
 export default function Content() {
