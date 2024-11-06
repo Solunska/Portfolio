@@ -1,21 +1,21 @@
 import Button from '../UI/Button';
 import styles from './Content.module.css';
 import { useState } from 'react';
-import ReactProjects from './ReactProjects';
+import Projects from './Projects';
 import UxUiProjects from './UxUiProjects';
-import SchoolProjects from './SchoolProjects';
+import Courses from './Courses';
 
 export default function Content() {
-    const [activeTab, setActiveTab] = useState('react');
+    const [activeTab, setActiveTab] = useState('projects');
 
     return <div className={styles.mainContainer}>
         <div className={styles.buttonsContainer}>
-            <Button buttonClass={activeTab === 'react' ? styles.categoryButtonActive : styles.categoryButton} handleClick={() => setActiveTab('react')}>React</Button>
-            <Button buttonClass={activeTab === 'school' ? styles.categoryButtonActive : styles.categoryButton} handleClick={() => setActiveTab('school')}>School Projects</Button>
+            <Button buttonClass={activeTab === 'projects' ? styles.categoryButtonActive : styles.categoryButton} handleClick={() => setActiveTab('projects')}>Projects</Button>
+            <Button buttonClass={activeTab === 'course' ? styles.categoryButtonActive : styles.categoryButton} handleClick={() => setActiveTab('course')}>Courses</Button>
             <Button buttonClass={activeTab === 'uxui' ? styles.categoryButtonActive : styles.categoryButton} handleClick={() => setActiveTab('uxui')}>UX/UI</Button>
         </div>
-        {activeTab === 'react' ? <ReactProjects /> : null}
+        {activeTab === 'projects' ? <Projects /> : null}
+        {activeTab === 'course' ? <Courses /> : null}
         {activeTab === 'uxui' ? <UxUiProjects /> : null}
-        {activeTab === 'school' ? <SchoolProjects /> : null}
     </div>
 }
