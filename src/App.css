@@ -46,6 +46,23 @@ body {
   justify-content: space-between;
 }
 
+.flutter-svg:hover .primary-color {
+  fill: #c39738;
+}
+
+.flutter-svg:hover .secondary-color {
+  fill: #c39738;
+}
+
+.flutter-svg:hover .tertiary-color {
+  fill: #9b7013;
+}
+
+.flutter-svg .gradient-color {
+  fill: url(#paint0_linear_23_80);
+}
+
+
 @media(max-width: 940px) {
   .about-me-container {
     flex-direction: column;

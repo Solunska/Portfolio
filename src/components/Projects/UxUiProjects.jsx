@@ -18,7 +18,8 @@ export default function UxUiProjects() {
                     link={project.link}
                     label={project.label}
                     photo={project.image}
-                    projectName={project.projectName} >
+                    projectName={project.projectName}
+                    tools={project.toolsAndTech}>
                     {project.buttons && project.buttons.map(button => (
                         <Button
                             key={button.link}

@@ -1,4 +1,5 @@
 import styles from '../Projects/Content.module.css';
+import Skill from '../UI/Skill';
 
 export default function ProjectCard({
     photo,
@@ -7,6 +8,7 @@ export default function ProjectCard({
     label = 'code',
     children,
     link,
+    tools
 }) {
     const descriptionWithBreaks = description.split('\n').map((line, index) => (
         <div key={index}>
@@ -25,10 +27,11 @@ export default function ProjectCard({
                     <p>{projectName}</p>
                     <div>{descriptionWithBreaks}</div>
                 </div>
-                {/* <div>
-                    <p>Technologies used:</p>
-                    {}
-                </div> */}
+                <div>
+                    {tools && tools.map(tool =>
+                        <Skill key={tool} image={tool} />
+                    )}
+                </div>
                 <div className={styles.links}>
                     <a href={link} target="_blank" rel="noopener noreferrer" className={styles.buttonOutlined}>
                         {label}

@@ -18,6 +18,7 @@ export default function Courses() {
                         link={course.link}
                         photo={course.image}
                         projectName={course.projectName}
+                        tools={course.toolsAndTech}
                     />
                 </motion.div>
             ))}

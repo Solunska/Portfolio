@@ -6,7 +6,7 @@
 }
 
 .resume_introduction {
-    width:40%;
+    width: 40%;
     margin-left: 10em;
     display: flex;
     flex-direction: column;
@@ -57,14 +57,23 @@
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     gap: 10px;
     justify-items: center;
     align-items: center;
 }
 
-.skills img{
-    width: 7em;
+.skillContainer {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.skillIcon svg path {
+    transition: fill 0.3s ease;
+}
+
+.skillIcon:hover svg path {
+    fill: #F9BE42;
 }
 
 .aditional_skills_container {
@@ -113,9 +122,9 @@
         margin-left: 0;
     }
 
-    
+
     .infoContainer {
-       padding: 3em 0;
+        padding: 3em 0;
     }
 }
 

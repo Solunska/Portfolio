@@ -18,7 +18,8 @@ export default function Projects() {
                     description={project.description}
                     photo={project.image}
                     projectName={project.projectName}
-                    label={project.label1}>
+                    label={project.label1}
+                    tools={project.toolsAndTech}>
                     {project.link2 &&
                         <Button
                             buttonClass={styles.buttonOutlined}

@@ -26,10 +26,8 @@ export default function Content() {
                 {...MOTION_SETTINGS}>
                 <p className={styles.label}>Education</p>
                 <div>
-                    <Education school='Faculty of Computer Science and Engineering, Skopje'
-                        year='2020 - Present' />
-                    <Education school='Gymnasium Kocho Racin, Veles'
-                        year='2016 - 2020' />
+                    <Education school='Faculty of Computer Science and Engineering, Skopje' year='2020 - Present' />
+                    <Education school='Gymnasium Kocho Racin, Veles' year='2016 - 2020' />
                 </div>
             </motion.div>
             <motion.div
@@ -38,18 +36,26 @@ export default function Content() {
                 initial="hidden"
                 animate="show">
                 {SKILLS.map(skill => (
-                    <motion.div key={skill.name} variants={SKILLS_ITEM_VARIANTS}><Skill image={skill.image} alt={skill.name} /></motion.div>
+                    <motion.div
+                        key={skill.name}
+                        variants={SKILLS_ITEM_VARIANTS}>
+                        <Skill image={skill.image} />
+                    </motion.div>
                 ))}
             </motion.div>
             <div className={styles.aditional_skills_container}>
                 <p className={styles.label}>Additional Skills</p>
                 <motion.div
+                    className={styles.aditional_skills}
                     variants={SKILLS_CONTAINER_VARIANTS}
                     initial="hidden"
-                    animate="show"
-                    className={styles.aditional_skills}>
+                    animate="show" >
                     {ADDITIONAL_SKILLS.map(skill => (
-                        <motion.div key={skill} variants={SKILLS_ITEM_VARIANTS}><AdditionalSkills skill={skill} /></motion.div>
+                        <motion.div
+                            key={skill}
+                            variants={SKILLS_ITEM_VARIANTS}>
+                            <AdditionalSkills skill={skill} />
+                        </motion.div>
                     ))}
                 </motion.div>
             </div>

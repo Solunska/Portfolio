@@ -1,5 +1,9 @@
-export default function Skill({ image, alt }) {
-    return <div>
-        <img src={image} alt={alt} />
-    </div>
+import styles from '../Resume/Content.module.css';
+
+export default function Skill({ image }) {
+    return (
+        <div className={styles.skillContainer}>
+            <div className={styles.skillIcon}>{image}</div>
+        </div>
+    );
 }
