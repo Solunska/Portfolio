@@ -1,8 +1,7 @@
-import './Button.css';
 import { motion } from 'framer-motion';
 
 export default function Button({ children, buttonClass, handleClick, linkto }) {
-    return <a href={linkto}>
+    return <a href={linkto} target='_blank' rel="noopener noreferrer">
         <motion.button
             onClick={handleClick}
             className={buttonClass}

@@ -113,6 +113,7 @@
     border: 1px solid #f9bf4294;
     border-radius: 2em;
     transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .project{
